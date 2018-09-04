@@ -3,6 +3,9 @@ function global:Disable-TunnelingProtocols {
     <#
     .SYNOPSIS
     Disabled the tunneling protocols Teredo, Isatap and 6to4
+
+    .EXAMPLE
+    
     #>
 
     Process {
@@ -15,6 +18,6 @@ function global:Disable-TunnelingProtocols {
         if ((Get-Net6to4Configuration).State -ne 'Disabled') {
             Set-Net6to4Configuration -State Disabled
         }
-        
+
     }
 }

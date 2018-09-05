@@ -1,8 +1,8 @@
 
+$FunctionFiles = (Get-ChildItem -Path ($PSScriptRoot + "\functions\*.ps1"))
+
 # Load Functions
-. ($PSScriptRoot + "\functions\Disable-TunnelingProcotols.ps1")
-. ($PSScriptRoot + "\functions\Test-SessionElevation.ps1")
+$FunctionFiles | ForEach-Object {. $_.FullName}
 
 # Export Module Member Functions
-Export-ModuleMember -Function 'Disable-TunnelingProtocols'
-Export-ModuleMember -Function 'Test-SessionElevation'
+$FunctionFiles | ForEach-Object { Export-ModuleMember -Function $_.BaseName }

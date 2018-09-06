@@ -1,4 +1,4 @@
-function global:Remove-PS1RunAs {
+function Remove-PS1RunAs {
     <#
     .SYNOPSIS
     Removes "Run as Administrator" from the right-click menu for *.ps1-Files

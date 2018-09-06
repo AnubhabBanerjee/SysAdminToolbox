@@ -1,4 +1,4 @@
-function global:Disable-TunnelingProtocols {
+function Disable-TunnelingProtocols {
 
     <#
     .SYNOPSIS

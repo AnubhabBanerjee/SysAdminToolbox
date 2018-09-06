@@ -1,4 +1,4 @@
-function global:Add-PS1RunAs {
+function Add-PS1RunAs {
     <#
     .SYNOPSIS
     Adds "Run as Administrator" to the right-click menu for *.ps1-Files

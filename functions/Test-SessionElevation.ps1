@@ -1,4 +1,4 @@
-function global:Test-SessionElevation {
+function Test-SessionElevation {
 
     <#
 
@@ -8,6 +8,9 @@ function global:Test-SessionElevation {
     .EXAMPLE
     PS C:>Test-SessionElevation
     True
+
+    .OUTPUTS
+    Boolean. Test-SessionElevation returns whether the current PowerShell Session is elevated.
 
     .NOTES
     Copied from https://ss64.com/ps/syntax-elevate.html

@@ -1,4 +1,4 @@
-function global:Test-SessionElevation {
+function Test-SessionElevation {
 
     <#
 

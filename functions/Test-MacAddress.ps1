@@ -1,4 +1,4 @@
-function global:Test-MacAddress {
+function Test-MacAddress {
 
     <#
     .SYNOPSIS

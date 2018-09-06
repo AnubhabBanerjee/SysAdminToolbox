@@ -1,4 +1,4 @@
-function global:Convert-MacToIPv6 {
+function Convert-MacToIPv6 {
     <#
     
     .SYNOPSIS

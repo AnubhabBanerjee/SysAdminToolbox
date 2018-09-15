@@ -13,7 +13,7 @@ Converts a given string to CamelCase notation
 
 ## SYNTAX
 
-```
+```PowerShell
 ConvertTo-CamelCase [-String] <String> [[-Seperator] <String[]>] [-LowerCamelCase] [<CommonParameters>]
 ```
 
@@ -27,7 +27,7 @@ This can be changed to LowerCamelCase by using the Switch '-LowerCamelCase'
 
 ### BEISPIEL 1
 
-```
+```PowerShell
 ConvertTo-CamelCase 'Report Template_Official'
 
 ReportTemplateOfficial
@@ -35,7 +35,7 @@ ReportTemplateOfficial
 
 ### BEISPIEL 2
 
-```
+```PowerShell
 ConvertTo-CamelCase 'Report Template_Official' -Seperator ' '
 
 ReportTemplate_official
@@ -43,7 +43,7 @@ ReportTemplate_official
 
 ### BEISPIEL 3
 
-```
+```PowerShell
 'Report Template_Official' | ConvertTo-CamelCase -Seperator ' ' -LowerCamelCase
 
 reportTemplate_official

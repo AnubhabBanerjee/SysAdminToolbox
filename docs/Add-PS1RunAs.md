@@ -25,7 +25,7 @@ Add-PS1RunAs
 
 ### BEISPIEL 1
 
-```
+```PowerShell
 Remove-PS1RunAs
 ```
 
